@@ -1,0 +1,13 @@
+<!--pages/record/record.wxml-->
+<view class="container">
+
+  <view class="input-container">
+    <input type="digit" class="input-weight" bindinput="inputComplete" placeholder="0" maxlength="4" />
+    <text class="unit-weight">斤</text>
+  </view>
+
+  <text class="time-tips">2020-06-21 18:29</text>
+
+  <button bindtap="confirmWeight" class="confirm-button">确认</button>
+  
+</view>
