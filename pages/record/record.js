@@ -1,4 +1,7 @@
 // pages/record/record.js
+
+const db = wx.cloud.database()
+
 Page({
 
   /**
@@ -23,6 +26,22 @@ Page({
       return;
     }
 
+    db.collection("weights").add({
+      data: {
+        weight: Number(this.data.weight),
+        date: new Date()
+      },
+      success(res) {
+        console.log("添加数据成功", res)
+        wx.navigateBack()
+        wx.showToast({
+          title: '添加数据成功',
+        })
+      },
+      fail(err) {
+        console.error("添加数据失败", err)
+      }
+    })
 
   }
 })

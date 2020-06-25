@@ -6,6 +6,15 @@ App({
     logs.unshift(Date.now())
     wx.setStorageSync('logs', logs)
 
+    if(!wx.cloud) {
+      console.error("请使用 2.2.3 及以上的基础环境库")
+    } else {
+      wx.cloud.init({
+        traceUser: true,
+        env: "weight-record-g3sao"
+      })
+    }
+
     // 登录
     wx.login({
       success: res => {

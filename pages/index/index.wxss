@@ -31,10 +31,14 @@
 }
 
 #add-record {
-  width: 128rpx;
-  height: 128rpx;
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  width: 100rpx;
+  height: 100rpx;
   border-radius: 50%;
-  padding: 0px;
   font-size: 28px;
-  border: 1px solid coral;
+  padding: 0px;
+  line-height: 1.2;
+  border: 2px solid #fe89d7;
 }

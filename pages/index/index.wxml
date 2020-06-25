@@ -9,10 +9,10 @@
 
   <view wx:for="{{total}}" class="container-item">
     <text class="date">{{item.date}}</text>
-    <text class="morning">{{item.morning_weight}} 斤</text>
-    <text class="evening">{{item.evening_weight}} 斤</text>
+    <text class="morning">{{item.first.weight}} 斤</text>
+    <text class="evening">{{item.last.weight}} 斤</text>
   </view>
 
-  <button id="add-record">+</button>
+  <button id="add-record" bindtap="record">+</button>
 
 </view>
