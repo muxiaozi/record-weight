@@ -1,44 +1,83 @@
 /**index.wxss**/
 
 .container {
-  padding: 0px;
+  padding: 0rpx;
+  margin: 0rpx;
+  height: 100%;
+  position: absolute;
 }
 
-.container-item {
-  width: 100%;
-  display: flex;
-  justify-content: space-around;
-  flex-direction: row;
-  padding: 32rpx 0rpx;
+.timeline {
+  position: absolute;
+  height: 100%;
+  width: 4rpx;
+  background-color: #ff6d6d;
+  margin-left: 65rpx;
 }
 
-.table-header {
+.date {
+  position: relative;
+  display: block;
+  margin-left: 62rpx;
+  margin-top: 48rpx;
   font-weight: bold;
 }
 
-.container-item .date {
-  background-color: #fe89d7;
-  border-radius: 40px;
-  padding: 4rpx 32rpx;
-  font-size: 16px;
+.date::before {
+  content: "";
+  display: inline-block;
+  width: 32rpx;
+  height: 32rpx;
+  border-radius: 50%;
+  background-color: white;
+  border: 6rpx solid #ff6d6d;
+  transform: translate(-16rpx, 6rpx);
 }
 
-.container-item .morning {
-
+.day-item {
+  margin-left: 52rpx;
+  margin-top: 32rpx;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 
-.container-item .evening {
+.day-item::before {
+  content: "";
+  width: 16rpx;
+  height: 16rpx;
+  border: 8rpx solid #ff6d6d;
+  border-radius: 50%;
+  background-color: #ff6d6d;
+}
+
+.time {
+  color: white;
+  font-size: 24rpx;
+  padding: 4rpx 8rpx;
+  background-color: #ff6d6d;
+  border-radius: 8rpx;
+  margin-left: 24rpx;
+}
+
+.weight {
+  margin-left: 48rpx;
+}
+
+.badge {
+  margin-left: 16rpx;
 }
 
 #add-record {
   position: fixed;
-  bottom: 24px;
-  right: 24px;
-  width: 100rpx;
-  height: 100rpx;
+  bottom: 64rpx;
+  right: 64rpx;
+  width: 128rpx;
+  height: 128rpx;
   border-radius: 50%;
-  font-size: 28px;
-  padding: 0px;
-  line-height: 1.2;
-  border: 2px solid #fe89d7;
+  font-size: 96rpx;
+  padding: 0rpx;
+  color: #ff6d6d;
+  line-height: 1.1;
+  border: 6rpx solid #ff6d6d;
 }

@@ -2,12 +2,11 @@
   "pages": [
     "pages/index/index",
     "pages/record/record",
-    "pages/oneday/oneday",
     "pages/statistic/statistic"
   ],
   "window": {
     "backgroundTextStyle": "light",
-    "navigationBarBackgroundColor": "#fe89d7",
+    "navigationBarBackgroundColor": "#ff6d6d",
     "navigationBarTitleText": "散成绮",
     "navigationBarTextStyle": "white"
   },
@@ -27,7 +26,7 @@
       }
     ],
     "color": "#8a8a8a",
-    "selectedColor": "#fe89d7"
+    "selectedColor": "#ff6d6d"
   },
   "style": "v2",
   "sitemapLocation": "sitemap.json"

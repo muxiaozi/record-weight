@@ -1,16 +1,16 @@
 <!--index.wxml-->
 <view class="container">
 
-  <view class="container-item">
-    <text class="date table-header">日期</text>
-    <text class="morning table-header">早晨</text>
-    <text class="evening table-header">晚上</text>
-  </view>
+  <view class="timeline"></view>
 
-  <view wx:for="{{total}}" class="container-item">
-    <text class="date">{{item.date}}</text>
-    <text class="morning">{{item.first.weight}} 斤</text>
-    <text class="evening">{{item.last.weight}} 斤</text>
+  <view wx:for="{{days}}" wx:for-item="day">
+    <text class="date">{{day.date}}</text>
+
+    <view wx:for="{{day.data}}" class="day-item">
+      <view class="time">{{item.time}}</view>
+      <view class="weight">{{item.weight}} 斤</view>
+      <icon type="success" class="badge" size="20"></icon>
+    </view>
   </view>
 
   <button id="add-record" bindtap="record">+</button>
