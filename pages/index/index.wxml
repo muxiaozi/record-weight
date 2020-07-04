@@ -9,7 +9,7 @@
     <view wx:for="{{day.data}}" class="day-item">
       <view class="time">{{item.time}}</view>
       <view class="weight">{{item.weight}} 斤</view>
-      <icon type="success" class="badge" size="20"></icon>
+      <icon type="{{item.badge}}" class="badge" size="20"></icon>
     </view>
   </view>
 
