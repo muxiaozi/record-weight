@@ -1,6 +1,7 @@
 // pages/record/record.js
 
 const db = wx.cloud.database()
+const util = require("../../utils/util")
 
 Page({
 
@@ -8,7 +9,8 @@ Page({
    * 页面的初始数据
    */
   data: {
-    weight: 0
+    weight: 0,
+    now: util.formatDateTime(new Date())
   },
 
   inputComplete: function(e) {
