@@ -10,24 +10,6 @@
     "navigationBarTitleText": "散成绮",
     "navigationBarTextStyle": "white"
   },
-  "tabBar": {
-    "list": [
-      {
-        "pagePath": "pages/index/index",
-        "text": "总览",
-        "iconPath": "images/timeline_normal.png",
-        "selectedIconPath": "images/timeline_selected.png"
-      },
-      {
-        "pagePath": "pages/statistic/statistic",
-        "text": "统计",
-        "iconPath": "images/statistic_normal.png",
-        "selectedIconPath": "images/statistic_selected.png"
-      }
-    ],
-    "color": "#8a8a8a",
-    "selectedColor": "#ff6d6d"
-  },
   "style": "v2",
   "sitemapLocation": "sitemap.json"
 }
